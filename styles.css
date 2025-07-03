@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --Black: hsl(212, 21%, 14%);
+  --Grey: hsl(228, 12%, 48%);
+  --Cream: hsl(30, 38%, 92%);
+  --White: hsl(0, 0%, 100%);
+  --Green500: hsl(158, 36%, 37%);
+  --Green700: hsl(158, 42%, 18%);
+}
+html {
+  font-size: 62.5%;
+}
+.font-Montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+.font-Fraunces {
+  font-family: "Fraunces", sans-serif;
+}
+.font-500 {
+  font-weight: 500;
+}
+.font-700 {
+  font-weight: 700;
+}
+.color-gray {
+  color: var(--Grey);
+}
+.display-flex {
+  display: flex;
+}
+.border-radius {
+  border-radius: 1rem;
+}
+.display-grid {
+  display: grid;
+}
+body {
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Cream);
+}
+.container {
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 50rem;
+  width: 100%;
+  background-color: var(--White);
+  overflow: hidden;
+}
+.image {
+  width: 100%;
+  object-fit: cover;
+}
+.text {
+  align-items: center;
+  padding: 2.7rem;
+}
+.perfume {
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  font-size: 1rem;
+}
+.heading {
+  color: var(--Black);
+  font-size: 2.6rem;
+  line-height: 2.8rem;
+}
+.details {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  font-weight: 500;
+}
+.price-container {
+  align-items: center;
+}
+.offered-price {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--Green500);
+}
+.price {
+  text-decoration: line-through;
+  margin-left: 1.8rem;
+  font-size: 1rem;
+}
+.button {
+  height: 3rem;
+  background-color: var(--Green500);
+  border: none;
+  color: var(--White);
+  font-size: 1.1rem;
+  height: 3.5rem;
+  justify-content: center;
+  align-items: center;
+  transition: all 200ms linear;
+}
+.button span {
+  margin-left: 1rem;
+}
+.button:hover {
+  background-color: var(--Green700);
+  cursor: pointer;
+  color: var(--White);
+}
+@media only screen and (max-width: 51.7rem) {
+  .container {
+    grid-template-columns: 1fr;
+    max-width: 31.8rem;
+    height: auto;
+  }
+  .text {
+    row-gap: 1.8rem;
+  }
+}
