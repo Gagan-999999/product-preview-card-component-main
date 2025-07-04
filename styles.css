@@ -103,7 +103,7 @@ body {
   transition: all 200ms linear;
 }
 .button span {
-  margin-left: 1em;
+  margin-inline-start: 1em;
 }
 .button:hover {
   background-color: var(--Green700);
@@ -118,6 +118,6 @@ body {
 }
 @media (prefers-reduced-motion: reduce) {
   .button {
-    transition: none !important;
+    transition: none;
   }
 }
